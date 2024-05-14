@@ -24,6 +24,7 @@ from events import views
 
 
 urlpatterns = [
+    path('admin/', admin.site.urls),  
     path('api/data', views.get_data, name='get_data'),
     path('api/create/event', views.create_event, name='create_event'),
     path('api/events/delete/<int:event_id>', views.delete_event, name='delete_event'),
