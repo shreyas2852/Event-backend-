@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-kwz5n85(_4c9xw+p95y@)2h)g@(=_j-id6uh9=*3(rz744+qtt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['event-backend-k3mh.onrender.com','127.0.0.1' ]
+ALLOWED_HOSTS = ['event-backend-k3mh.onrender.com','localhost', '127.0.0.1', '[::1]', ]
 
 
 # Application definition
@@ -52,9 +52,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
-CORS_ORIGIN_WHITELIST = [
+CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://event-backend-k3mh.onrender.com"
 ] # For production, use CORS_ALLOWED_ORIGINS to specify allowed domains
