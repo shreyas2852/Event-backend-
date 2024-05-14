@@ -1,8 +1,12 @@
 from django.http import JsonResponse
+from django.shortcuts import render
 from .models import Event
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 import json
+
+def home(request):
+    return render(request, 'home.html', {})
 
 @require_http_methods(["GET"])
 def get_data(request):
