@@ -52,7 +52,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ORIGIN_WHITELIST = [
     "http://localhost:5173",
     "https://event-backend-k3mh.onrender.com"
 ] # For production, use CORS_ALLOWED_ORIGINS to specify allowed domains
