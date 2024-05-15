@@ -56,7 +56,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
-    'https://event-backend-k3mh.onrender.com'
+    'https://event-backend-k3mh.onrender.com',
+    'https://event-management-view.netlify.app',
 ] # For production, use CORS_ALLOWED_ORIGINS to specify allowed domains
 
 ROOT_URLCONF = 'admin.urls'
